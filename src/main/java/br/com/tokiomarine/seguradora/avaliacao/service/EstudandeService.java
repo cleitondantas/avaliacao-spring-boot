@@ -6,6 +6,7 @@ import javax.validation.Valid;
 
 import br.com.tokiomarine.seguradora.avaliacao.entidade.Estudante;
 
+
 public interface EstudandeService {
 
 	List<Estudante> buscarEstudantes();
@@ -15,4 +16,6 @@ public interface EstudandeService {
 	Estudante buscarEstudante(long id);
 
 	void atualizarEstudante(@Valid Estudante estudante);
+	
+	void deletarEstudante(long id);
 }
